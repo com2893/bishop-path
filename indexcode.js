@@ -12,15 +12,28 @@ function generate_form(){
         let nuevoInput = document.createElement("input");
 
         // Establecer el tipo de input (por ejemplo, un input de tipo texto)
-        nuevoInput.type = "text";
+        nuevoInput.type = "number";
 
         // Establecer el atributo `placeholder` para el nuevo input
-        nuevoInput.placeholder = "number of player";
+        nuevoInput.placeholder = "number of players";
 
         // Añadir el nuevo input al formulario
         form.appendChild(nuevoInput);
 
         // Añadir un salto de línea (opcional)
-        formulario.appendChild(document.createElement("br")); 
-     
+        form.appendChild(document.createElement("br")); 
+
+          // Crear un nuevo input
+          let nuevoInputu = document.createElement("input");
+
+          // Establecer el tipo de input (por ejemplo, un input de tipo texto)
+          nuevoInputu.type = "text";
+  
+          // Establecer el atributo `placeholder` para el nuevo input
+          nuevoInputu.placeholder = "tournament name";
+  
+          // Añadir el nuevo input al formulario
+          form.appendChild(nuevoInputu);
+          
+  
 }
