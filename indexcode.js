@@ -10,6 +10,7 @@ function generate_form(){
     
         // Crear un nuevo input
         let nuevoInput = document.createElement("input");
+        let nuevoInputu = document.createElement("input");
 
         // Establecer el tipo de input (por ejemplo, un input de tipo texto)
         nuevoInput.type = "number";
@@ -24,8 +25,7 @@ function generate_form(){
         form.appendChild(document.createElement("br")); 
 
           // Crear un nuevo input
-          let nuevoInputu = document.createElement("input");
-
+          
           // Establecer el tipo de input (por ejemplo, un input de tipo texto)
           nuevoInputu.type = "text";
   
