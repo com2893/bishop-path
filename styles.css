@@ -1,46 +1,109 @@
-.text{
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(255, 255, 255);
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
+
+#bar {
+    background-color: #00bcd4;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
 #list {
     list-style-type: none;
-    padding-left: 0;
-    margin-top: 0px;    
+    display: flex;
 }
-
 
 #li1 {
     display: flex;
-    justify-content: flex-end; /*arreglar el codigo con java script */
-    x:120px;
+    align-items: center;
 }
-.boton{
-    background-color: rgb(172, 172, 233);
-    border-radius: 7px;
-    border-width: 0;
-    
-}
-#bar{
-    background-color: aqua;
 
+.boton {
+    background-color: #a7a7e9;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
 }
-#barboton1{
+
+.boton:hover {
+    background-color: #6e6eed;
+}
+
+#titulo {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#formulacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input, button {
+    margin: 8px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input[type="number"], input[type="text"] {
+    width: 200px;
+}
+
+table {
+    margin-top: 20px;
+    width: 80%;
     margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
 }
-#titulo{
-    font-size: 26px;
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
     text-align: center;
 }
-#texto{
-    margin-left: auto;
-    font-size: 16px;
+
+th {
+    background-color: #00bcd4;
+    color: white;
 }
-#formulacion{
-    display: flex;
-    justify-content: center;
-    
+
+button.match-btn {
+    background-color: #8bc34a;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.match-btn:hover {
+    background-color: #7b9b3a;
 }
