@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bishop Path - Torneo Ajedrez</title>
+    <title>Bishop Path - Torneo de Ajedrez</title>
     <link rel="stylesheet" href="styles.css">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
 </head>
 <body>
-    <nav id="bar">
-        <ul id="list">
-            <li id="li1">
-                <button id="barboton2" class="boton" onclick="login()">Iniciar sesión</button>
-                <h5 id="texto" class="text">Bishop Path</h5>
-                <button id="barboton1" class="boton" onclick="generate_form()">
-                    <p class="text">Crear Torneo</p>
-                </button>
-            </li>
-        </ul>
-    </nav>
 
-    <h2 class="text" id="titulo">Crea un torneo para comenzar</h2>
-    <div id="loadingIndicator" class="loading">Cargando...</div>
-    <form id="formulacion"></form>
+<!-- Barra de navegación -->
+<nav id="bar">
+    <ul id="list">
+        <li id="li1">
+            <button id="barboton2" class="boton" onclick="login()">Iniciar sesión</button>
+            <h5 id="texto" class="text">Bishop Path</h5>
+            <button id="barboton1" class="boton" onclick="generate_form()">Crear Torneo</button>
+        </li>
+    </ul>
+</nav>
 
-    <script src="indexcode.js"></script>
+<!-- Titulo del torneo -->
+<h2 id="titulo">Crea un torneo para comenzar</h2>
+
+<!-- Formulario para generar el torneo -->
+<form id="formulacion"></form>
+
+<!-- Indicador de carga -->
+<div id="loadingIndicator" class="hidden">Generando torneo...</div>
+
+<script src="indexcode.js"></script>
 </body>
 </html>
